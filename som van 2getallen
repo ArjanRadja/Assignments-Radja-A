@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main (){
+ double A;
+ double B;
+ double Antwoord;
+
+  while (true){
+
+
+    cout << "Wat is A ";
+    cin >> A;
+    
+    cout << "wat is B ";
+    cin >> B;
+
+   Antwoord = ((A)+(B));
+
+    cout << "Antwoord: " << Antwoord << '\n';
+}
+return 0;
+
+}
