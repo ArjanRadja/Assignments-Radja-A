@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;    
+
+int main() {
+    double getal1, getal2, antwoord;
+    char operatie;
+    
+    cout << "Geef getal 1: ";       
+    cin >> getal1;
+    
+    cout << "Geef getal 2: ";
+    cin >> getal2;  
+    
+    cout << "Welke operatie (+, -, *, /): ";
+    cin >> operatie;
+    
+    switch (operatie) {
+        case '+':
+            antwoord = getal1 + getal2;
+            break;
+        case '-':
+            antwoord = getal1 - getal2;
+            break;
+        case '*':
+            antwoord = getal1 * getal2;
+            break;
+        case '/':
+            if (getal2 != 0) {
+                antwoord = getal1 / getal2;
+            } else {
+                cout << "ERROR" << endl;
+                return 1; 
+            }
+            break;
+        default:
+            cout << "Ongeldige operatie!" << endl;
+            
+    }
+    
+    cout << "Antwoord: " << antwoord << endl;
+    
+    return 0; 
+}
